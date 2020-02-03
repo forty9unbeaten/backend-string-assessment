@@ -55,11 +55,7 @@ def not_bad(s):
 def front_back(a, b):
     aSplit = math.ceil(len(a) / 2)
     bSplit = math.ceil(len(b) / 2)
-    aFront = a[0: aSplit]
-    aBack = a[aSplit:]
-    bFront = b[0: bSplit]
-    bBack = b[bSplit:]
-    return aFront + bFront + aBack + bBack
+    return (a[0: aSplit] + b[0: bSplit] + a[aSplit:] + b[bSplit:])
 
 
 # Provided simple test() function used in main() to print
